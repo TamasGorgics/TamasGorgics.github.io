@@ -12,11 +12,11 @@
 <!-- Navigation bar -->
 <div class="w3-top">
 	<ul class="w3-navbar w3-black w3-card-2 w3-right-align">		
-		<li><a href="#" class="w3-hover-none w3-hover-text-grey w3-padding-large">HOME</a></li>
-	    <li class="w3-hide-small"><a href="#aboutme" class="w3-padding-large">ABOUT ME</a></li>
-	    <li class="w3-hide-small"><a href="#experience" class="w3-padding-large">WORK EXPERIENCE & EDUCATION</a></li>
-	    <li class="w3-hide-small"><a href="#skills" class="w3-padding-large">SKILLS</a></li>
-	    <li class="w3-hide-small"><a href="#contact" class="w3-padding-large">CONTACT</a></li>
+		<li><button class="w3-btn w3-hover-none w3-hover-text-grey w3-padding-large" onclick=scrollTo("#top"); >HOME</button></li>
+	    <li class="w3-hide-small"><button class="w3-btn w3-padding-large" onclick=scrollTo("#aboutme"); >ABOUT ME</button></li>
+	    <li class="w3-hide-small"><button class="w3-btn w3-padding-large" onclick=scrollTo("#experience"); >WORK EXPERIENCE & EDUCATION</button></li>
+	    <li class="w3-hide-small"><button class="w3-btn w3-padding-large" onclick=scrollTo("#skills"); >SKILLS</button></li>
+	    <li class="w3-hide-small"><button class="w3-btn w3-padding-large" onclick=scrollTo("#contact"); >CONTACT</button></li>
 	</ul>
 </div>
 
@@ -26,18 +26,19 @@
     	<li><a href="#" class="w3-hover-none w3-hover-text-grey w3-padding-large">HOME</a></li>
 	    <li><a href="#aboutme" class="w3-padding-large">ABOUT ME</a></li>
 	    <li><a href="#experience" class="w3-padding-large">WORK EXPERIENCE</a></li>
+		<li><a href="#skills" class="w3-padding-large">SKILLS</a></li>
 	    <li><a href="#contact" class="w3-padding-large">CONTACT</a></li>
 	</ul>
 </div>
 
 <!-- Page content -->
-<div class="w3-content" style="max-width: 2000px">
+<div id="top" class="w3-content" style="max-width: 2000px">
 	
 	<div class="w3-container w3-center w3-padding-64 w3-light-grey">
 		<h1 class="w3-wide">TAMÁS GÖRGICS</h1>
 		<img src="img/toma.jpg" class="w3-circle w3-grayscale-min w3-hover-sepia">
 		<h2 class="w3-wide w3-padding">SOFTWARE ENGINEER</h2>
-		<a class="w3-btn w3-round-xlarge w3-slim" href="#contact">Say hi to me!</a>
+		<button id="sayHi" class="w3-btn w3-round-xlarge w3-slim" onclick=scrollTo("#contact"); >Say hi to me!</button>
 	</div>
 
 	<!-- About me section -->
@@ -48,12 +49,12 @@
 			<div class="w3-half w3-panel w3-round-large w3-padding-large">
 				<p class="w3-wide">Brief description</p>
 				<i class="fa fa-terminal fa-4x"></i>
-				<p class="w3-slim">25-year-old software enthusiast, currently living and working in Budapest, Hungary. I am interested mainly (but definitely not only) in Java and related stuff. My code runs mostly on the server side but I'm not afraid of doing some magic on front-end. I understand the importance of testing as well <i class="fa fa-smile-o"></i></p>
+				<p class="w3-slim">25-year-old software enthusiast, currently living and working in Budapest, Hungary. I am interested mainly (but definitely not only) in Java and related stuff. My code runs mostly on the server side but I'm not afraid of doing some magic on front-end. Always eager to pick up unknown tasks and learn something new.</p>
 			</div>
 			<div class="w3-half w3-panel w3-round-large w3-padding-large">
 				<p class="w3-wide">Other things</p>
 				<i class="fa fa-laptop fa-4x"></i>
-				<p class="w3-slim">In my freetime I really enjoy reading tech blog articles and tutorials. I truly am a fan of Scandinavian crime novels and movies. I hit the gym occasionally but no one notices... <i class="fa fa-frown-o"></i></p>
+				<p class="w3-slim">In my freetime I really enjoy reading tech blog articles and tutorials. I truly am a fan of Scandinavian crime novels and movies. I hit the gym occasionally and play the guitar regularly.</p>
 			</div>
 		</div>
 	</div>
@@ -64,7 +65,8 @@
 		<i class="fa fa-briefcase fa-4x"></i>
 		<div class="w3-row w3-margin">
 			<div class="w3-container w3-third w3-right-align">
-				<img src="img/statlogics_logo.svg" class="w3-margin" style="max-width: 200px">
+			<!--	<img src="img/statlogics_logo.svg" class="w3-margin" style="max-width: 200px">  -->
+				<img src="img/asseco.png" class="w3-margin" style="max-width: 200px">
 			</div>
 			<div class="w3-container w3-twothird w3-left-align" style="max-width: 800px">
 				<b class="w3-text-shadow">October 2016 - present</b>
@@ -238,6 +240,13 @@ function initialize() {
 
 google.maps.event.addDomListener(window, 'load', initialize);
 google.maps.event.addDomListener(window, 'resize', initialize);
+
+function scrollTo(id) {
+	$('html, body').animate({
+		scrollTop: $(id).offset().top	
+	}, 2000);
+}
+
 </script>
 
 </body>
