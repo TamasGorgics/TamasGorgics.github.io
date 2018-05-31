@@ -1,264 +1,396 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<title>TAMÁS GÖRGICS - SOFTWARE ENGINEER</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/w3.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>TAMÁS GÖRGICS - SOFTWARE ENGINEER</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link href="css/agency.min.css" rel="stylesheet">
 </head>
+
 <body class="w3-light-grey">
 
-<!-- Navigation bar -->
-<div class="w3-top">
-	<ul class="w3-navbar w3-black w3-card-2 w3-right-align">		
-		<li><button class="w3-btn w3-hover-none w3-hover-text-grey w3-padding-large" onclick="moveScreenTo('#top');" >HOME</button></li>
-	    <li class="w3-hide-small"><button class="w3-btn w3-padding-large" onclick="moveScreenTo('#aboutme');" >ABOUT ME</button></li>
-	    <li class="w3-hide-small"><button class="w3-btn w3-padding-large" onclick="moveScreenTo('#experience');" >WORK EXPERIENCE & EDUCATION</button></li>
-	    <li class="w3-hide-small"><button class="w3-btn w3-padding-large" onclick="moveScreenTo('#skills');" >SKILLS</button></li>
-	    <li class="w3-hide-small"><button class="w3-btn w3-padding-large" onclick="moveScreenTo('#contact');" >CONTACT</button></li>
-	</ul>
-</div>
+    <!-- Navigation bar -->
+    <div class="w3-top">
+        <ul class="w3-navbar w3-black w3-card-2 w3-right-align">
+            <li><button class="w3-btn w3-hover-none w3-hover-text-grey w3-padding-large" onclick="moveScreenTo('#top');">HOME</button></li>
+            <li class="w3-hide-small"><button class="w3-btn w3-padding-large" onclick="moveScreenTo('#aboutme');">ABOUT ME</button></li>
+            <li class="w3-hide-small"><button class="w3-btn w3-padding-large" onclick="moveScreenTo('#story');">MY STORY</button></li>
+            <!-- <li class="w3-hide-small"><button class="w3-btn w3-padding-large" onclick="moveScreenTo('#experience');">WORK EXPERIENCE & EDUCATION</button></li> -->
+            <li class="w3-hide-small"><button class="w3-btn w3-padding-large" onclick="moveScreenTo('#skills');">SKILLS</button></li>
+            <li class="w3-hide-small"><button class="w3-btn w3-padding-large" onclick="moveScreenTo('#contact');">CONTACT</button></li>
+        </ul>
+    </div>
 
-<!-- Navigation on small screens -->
-<div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-    <ul class="w3-navbar w3-left-align w3-black">
-    	<li><a href="#" class="w3-hover-none w3-hover-text-grey w3-padding-large">HOME</a></li>
-	    <li><a href="#aboutme" class="w3-padding-large">ABOUT ME</a></li>
-	    <li><a href="#experience" class="w3-padding-large">WORK EXPERIENCE</a></li>
-		<li><a href="#skills" class="w3-padding-large">SKILLS</a></li>
-	    <li><a href="#contact" class="w3-padding-large">CONTACT</a></li>
-	</ul>
-</div>
+    <!-- Navigation on small screens -->
+    <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+        <ul class="w3-navbar w3-left-align w3-black">
+            <li><a href="#" class="w3-hover-none w3-hover-text-grey w3-padding-large">HOME</a></li>
+            <li><a href="#aboutme" class="w3-padding-large">ABOUT ME</a></li>
+            <li><a href="#experience" class="w3-padding-large">WORK EXPERIENCE</a></li>
+            <li><a href="#skills" class="w3-padding-large">SKILLS</a></li>
+            <li><a href="#contact" class="w3-padding-large">CONTACT</a></li>
+        </ul>
+    </div>
 
-<!-- Page content -->
-<div id="top" class="w3-content" style="max-width: 2000px">
-	
-	<div class="w3-container w3-center w3-padding-64 w3-light-grey">
-		<h1 class="w3-wide">TAMÁS GÖRGICS</h1>
-		<img src="img/toma.jpg" class="w3-circle w3-grayscale-min w3-hover-sepia">
-		<h2 class="w3-wide w3-padding">SOFTWARE ENGINEER</h2>
-		<button id="sayHi" class="w3-btn w3-round-xlarge w3-slim" onclick="moveScreenTo('#contact');" >Say hi to me!</button>
-	</div>
+    <!-- Page content -->
+    <div id="top" class="w3-content" style="max-width: 2000px">
 
-	<!-- About me section -->
-	<div class="w3-container w3-center w3-black w3-padding-32" id="aboutme">
-		<h3 class="w3-wide">ABOUT ME</h3>
-		<i class="fa fa-smile-o fa-4x"></i>
-		<div class="w3-row-padding w3-container">
-			<div class="w3-half w3-panel w3-round-large w3-padding-large">
-				<p class="w3-wide">Brief description</p>
-				<i class="fa fa-terminal fa-4x"></i>
-				<p class="w3-slim">26-year-old software enthusiast, currently living and working in Budapest, Hungary. I am interested mainly (but definitely not only) in Java and related stuff. My code runs mostly on the server side but I'm not afraid of doing some magic on front-end. Always eager to pick up unknown tasks and learn something new.</p>
-			</div>
-			<div class="w3-half w3-panel w3-round-large w3-padding-large">
-				<p class="w3-wide">Other things</p>
-				<i class="fa fa-laptop fa-4x"></i>
-				<p class="w3-slim">In my freetime I really enjoy reading tech blog articles and tutorials. I truly am a fan of Scandinavian crime novels and movies. I hit the gym occasionally and play the guitar regularly.</p>
-			</div>
-		</div>
-	</div>
+        <div class="w3-container w3-center w3-padding-64 w3-light-grey">
+            <h1 class="w3-wide">TAMÁS GÖRGICS</h1>
+            <img src="img/toma.jpg" class="w3-circle w3-grayscale-min w3-hover-sepia">
+            <h2 class="w3-wide w3-padding">SOFTWARE ENGINEER</h2>
+            <button id="sayHi" class="w3-btn w3-round-xlarge w3-slim" onclick="moveScreenTo('#contact');">Say hi to me!</button>
+        </div>
 
-	<!-- Work experience section -->
-	<div class="w3-container w3-center w3-padding-32 w3-light-grey" id="experience">
-		<h3 class="w3-wide">WORK EXPERIENCE & EDUCATION</h3>
-		<i class="fa fa-briefcase fa-4x"></i>
-		<div class="w3-row w3-margin">
-			<div class="w3-container w3-third w3-right-align">
-				<img src="img/wup.svg" class="w3-margin" style="max-width: 200px">
-			</div>
-			<div class="w3-container w3-twothird w3-left-align" style="max-width: 800px">
-				<b class="w3-text-shadow">April 2018 - present</b>
-				<p>Software developer</p>
-				<p class="w3-opacity">At W.UP I am part of a scrum team developing an internetbanking solution based on former IND Group's BFO platform.</p>
-			</div>
-		</div>
-		
-		<div class="w3-row w3-margin">
-			<div class="w3-container w3-third w3-right-align">
-			<!--	<img src="img/statlogics_logo.svg" class="w3-margin" style="max-width: 200px">  -->
-				<img src="img/asseco.png" class="w3-margin" style="max-width: 200px">
-			</div>
-			<div class="w3-container w3-twothird w3-left-align" style="max-width: 800px">
-				<b class="w3-text-shadow">October 2016 - March 2018</b>
-				<p>Software developer</p>
-				<p class="w3-opacity">As a software developer at Asseco Central Europe Magyarország's finance strategic business unit - called Statlogics - I am part of a team working on a consumer finance platform that covers the whole life cycle of consumer loans from loan origination to collections management.</p>
-			</div>
-		</div>
+        <!-- About me section -->
+        <div class="w3-container w3-center w3-black w3-padding-32" id="aboutme">
+            <h3 class="w3-wide">ABOUT ME</h3>
+            <i class="fa fa-smile-o fa-4x"></i>
+            <div class="w3-row-padding w3-container">
+                <div class="w3-half w3-panel w3-round-large w3-padding-large">
+                    <p class="w3-wide">Brief description</p>
+                    <i class="fa fa-terminal fa-4x"></i>
+                    <p class="w3-slim">26-year-old software enthusiast, currently living and working in Budapest, Hungary. I am interested mainly (but definitely not only) in Java and related stuff. My code runs mostly on the server side but I'm not afraid of doing some
+                        magic on front-end. Always eager to pick up unknown tasks and learn something new.</p>
+                </div>
+                <div class="w3-half w3-panel w3-round-large w3-padding-large">
+                    <p class="w3-wide">Other interests</p>
+                    <i class="fa fa-asterisk fa-4x"></i>
+                    <p class="w3-slim">In my freetime I really enjoy reading tech blog articles and tutorials. I truly am a fan of Scandinavian crime novels and movies. I hit the gym occasionally and play the guitar regularly.</p>
+                </div>
+            </div>
+        </div>
 
-		<div class="w3-row w3-margin">
-			<div class="w3-container w3-third w3-right-align">
-				<img src="img/RR_logo.svg" class="w3-margin" style="max-width: 200px">
-			</div>
-			<div class="w3-container w3-twothird w3-left-align" style="max-width: 800px">
-				<b class="w3-text-shadow">February 2016 - September 2016</b>
-				<p>Junior software developer</p>
-				<p class="w3-opacity">Development of the foundation and framework of R&R Software's FusionR enterprise business application used mainly by utility companies.</p>
-			</div>
-		</div>
+        <!-- Story section -->
 
-		<div class="w3-row w3-margin">
-			<div class="w3-container w3-third w3-right-align">
-				<img src="img/RR_logo.svg" class="w3-margin" style="max-width: 200px">
-			</div>
-			<div class="w3-container w3-twothird w3-left-align" style="max-width: 800px">
-				<b class="w3-text-shadow">June 2014 - January 2016</b>
-				<p>Software developer trainee</p>
-				<p class="w3-opacity">Development of the foundation and framework of R&R Software's FusionR enterprise business application used mainly by utility companies.</p>
-			</div>
-		</div>
+        <div class="w3-container w3-center w3-light-grey w3-padding-32" id="story">
+            <h3 class="w3-wide">MY STORY</h3>
 
-		<i class="fa fa-book fa-4x"></i>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-image">
+                                <i class="fa fa-child fa-5x"></i>
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>1992</h4>
+                                    <h4 class="subheading">I was born</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">My parents were really happy to have a son after two daughters. <i class="fa fa-smile-o"></i></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <!-- <img class="rounded-circle img-fluid" src="img/deaklogo.gif" alt=""> -->
+                                <i class="fa fa-laptop fa-5x"></i>
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>1998-2006</h4>
+                                    <h4 class="subheading">Elementary school - My first programming experiment</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">The Logo programming language was the first language in which I wrote small programs at the age of 8. Later, at the age of 12 I was taught basic programming algorithms and how to implement them in Pascal language. Our
+                                        teacher also showed us basic Unix commands. This was the time I decided that I want to be a software engineer.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <img class="rounded-circle img-fluid" src="img/lovassy_cimer.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>2006-2011</h4>
+                                    <h4 class="subheading">High school</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Lovassy László Gimnázium, Veszprém, Hungary<br> Specialization in informatics with intensive foreign language course in the first school year. I was taught programming in Pascal language.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-fluid" src="img/bme.png" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>September 2011</h4>
+                                    <h4 class="subheading">Started university</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Budapest University of Technology and Economics, Hungary<br> Faculty of Electrical Enineering and Informatics<br> Computer Engineering B.Sc.<br> Specialization in system engineering</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-fluid" src="img/RR_logo.svg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>June 2014</h4>
+                                    <h4 class="subheading">My first developer job!</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">As a software engineer intern at R&R Software my main task was developing the foundation and framework of FusionR enterprise business application used mainly by utility companies.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <i class="fa fa-graduation-cap fa-5x"></i>
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>January 2016</h4>
+                                    <h4 class="subheading">University degree, full time job</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">After graduation I continued my previous work as a full-time software engineer. As extra responsibilities I was occasionally mentoring interns and also keeping in touch with clients.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-fluid" src="img/asseco.png" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>October 2016</h4>
+                                    <h4 class="subheading">Software engineer</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">As a software engineer at Asseco Central Europe Magyarország's finance strategic business unit - called Statlogics - I was part of a team working on a consumer finance platform that covers the whole life cycle of consumer
+                                        loans from loan origination to collections management.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-fluid" src="img/wup.svg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>April 2018</h4>
+                                    <h4 class="subheading">Joined a fintech startup - W.UP</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">At W.UP I am a software engineer in an agile team developing an internetbanking solution based on former IND Group's BFO platform.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-		<div class="w3-row w3-margin">
-			<div class="w3-container w3-third w3-right-align">
-				<img src="img/bme.png" class="w3-margin" style="max-width: 200px">
-			</div>
-			<div class="w3-container w3-twothird w3-left-align" style="max-width: 800px">
-				<b class="w3-text-shadow">September 2011 - January 2016</b>
-				<p class="w3-opacity">Budapest University of Technology and Economics, Hungary<br>
-				Faculty of Electrical Enineering and Informatics<br>
-				Computer Engineering B.Sc.<br>
-				Specialization in system engineering</p>
-			</div>
-		</div>
+        <!-- Work experience section
+        <div class="w3-container w3-center w3-padding-32 w3-light-grey" id="experience">
+            <h3 class="w3-wide">WORK EXPERIENCE & EDUCATION</h3>
+            <i class="fa fa-briefcase fa-4x"></i>
+            <div class="w3-row w3-margin">
+                <div class="w3-container w3-third w3-right-align">
+                    <img src="img/wup.svg" class="w3-margin" style="max-width: 200px">
+                </div>
+                <div class="w3-container w3-twothird w3-left-align" style="max-width: 800px">
+                    <b class="w3-text-shadow">April 2018 - present</b>
+                    <p>Software developer</p>
+                    <p class="w3-opacity">At W.UP I am part of an agile team developing an internetbanking solution based on former IND Group's BFO platform.</p>
+                </div>
+            </div>
 
-		<div class="w3-row w3-margin">
-			<div class="w3-container w3-third w3-right-align">
-				<img src="img/lovassy_cimer.jpg" class="w3-margin" style="max-height: 100px">
-			</div>
-			<div class="w3-container w3-twothird w3-left-align" style="max-width: 800px">
-				<b class="w3-text-shadow">September 2006 - June 2016</b>
-				<p class="w3-opacity">Lovassy László Gimnázium, Veszprém, Hungary<br>
-				Specialization in informatics with intensive foreign language course in the first school year.</p>
-			</div>
-		</div>
-	</div>
+            <div class="w3-row w3-margin">
+                <div class="w3-container w3-third w3-right-align">                    
+                    <img src="img/asseco.png" class="w3-margin" style="max-width: 200px">
+                </div>
+                <div class="w3-container w3-twothird w3-left-align" style="max-width: 800px">
+                    <b class="w3-text-shadow">October 2016 - March 2018</b>
+                    <p>Software developer</p>
+                    <p class="w3-opacity">As a software developer at Asseco Central Europe Magyarország's finance strategic business unit - called Statlogics - I was part of a team working on a consumer finance platform that covers the whole life cycle of consumer loans from
+                        loan origination to collections management.</p>
+                </div>
+            </div>
 
-	<!-- Education section 
+            <div class="w3-row w3-margin">
+                <div class="w3-container w3-third w3-right-align">
+                    <img src="img/RR_logo.svg" class="w3-margin" style="max-width: 200px">
+                </div>
+                <div class="w3-container w3-twothird w3-left-align" style="max-width: 800px">
+                    <b class="w3-text-shadow">February 2016 - September 2016</b>
+                    <p>Junior software developer</p>
+                    <p class="w3-opacity">Development of the foundation and framework of R&R Software's FusionR enterprise business application used mainly by utility companies.</p>
+                </div>
+            </div>
+
+            <div class="w3-row w3-margin">
+                <div class="w3-container w3-third w3-right-align">
+                    <img src="img/RR_logo.svg" class="w3-margin" style="max-width: 200px">
+                </div>
+                <div class="w3-container w3-twothird w3-left-align" style="max-width: 800px">
+                    <b class="w3-text-shadow">June 2014 - January 2016</b>
+                    <p>Software developer trainee</p>
+                    <p class="w3-opacity">Development of the foundation and framework of R&R Software's FusionR enterprise business application used mainly by utility companies.</p>
+                </div>
+            </div>
+
+            <i class="fa fa-book fa-4x"></i>
+
+            <div class="w3-row w3-margin">
+                <div class="w3-container w3-third w3-right-align">
+                    <img src="img/bme.png" class="w3-margin" style="max-width: 200px">
+                </div>
+                <div class="w3-container w3-twothird w3-left-align" style="max-width: 800px">
+                    <b class="w3-text-shadow">September 2011 - January 2016</b>
+                    <p class="w3-opacity">Budapest University of Technology and Economics, Hungary<br> Faculty of Electrical Enineering and Informatics<br> Computer Engineering B.Sc.<br> Specialization in system engineering</p>
+                </div>
+            </div>
+
+            <div class="w3-row w3-margin">
+                <div class="w3-container w3-third w3-right-align">
+                    <img src="img/lovassy_cimer.jpg" class="w3-margin w3-circle" style="max-height: 100px">
+                </div>
+                <div class="w3-container w3-twothird w3-left-align" style="max-width: 800px">
+                    <b class="w3-text-shadow">September 2006 - June 2016</b>
+                    <p class="w3-opacity">Lovassy László Gimnázium, Veszprém, Hungary<br> Specialization in informatics with intensive foreign language course in the first school year.</p>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Education section 
 	<div class="w3-container w3-center w3-padding-32 w3-black" id="education">
 		<h3 class="w3-wide">EDUCATION</h3>
 		<i class="fa fa-book fa-4x"></i>
 	</div>-->
 
-	<!-- Skills section -->
-	<div class="w3-container w3-center w3-padding-32 w3-black" id="skills">
-		<h3 class="w3-wide">SKILLS</h3>
-		<i class="fa fa-asterisk fa-4x"></i>
-		<div class="w3-row w3-margin">
-			<div class="w3-container w3-third w3-right-align">
-				<span class="w3-tag w3-round w3-blue-grey">Java</span>
-			</div>
-			<div class="w3-progress-container w3-round-xlarge w3-twothird w3-black" style="max-width: 800px">
-	            <div class="w3-progressbar w3-round-xlarge" style="width:100%"></div>
-	        </div>
-		</div>
+        <!-- Skills section -->
+        <div class="w3-container w3-center w3-padding-32 w3-black" id="skills">
+            <h3 class="w3-wide">SKILLS</h3>
+            <i class="fa fa-wrench fa-4x"></i>
+            <div class="w3-row w3-margin">
+                <div class="w3-container w3-third w3-right-align">
+                    <span class="w3-tag w3-round w3-blue-grey">Java</span>
+                </div>
+                <div class="w3-progress-container w3-round-xlarge w3-twothird w3-black" style="max-width: 800px">
+                    <div class="w3-progressbar w3-round-xlarge" style="width:100%"></div>
+                </div>
+            </div>
 
-		<div class="w3-row w3-margin">
-			<div class="w3-container w3-third w3-right-align">
-				<span class="w3-tag w3-round w3-blue-grey">JavaScript, HTML, CSS</span>
-			</div>
-			<div class="w3-progress-container w3-round-xlarge w3-twothird w3-black" style="max-width: 800px">
-	            <div class="w3-progressbar w3-round-xlarge" style="width:80%"></div>
-	        </div>
-		</div>
-		
-		<div class="w3-row w3-margin">
-			<div class="w3-container w3-third w3-right-align">
-				<span class="w3-tag w3-round w3-blue-grey">SQL</span>
-			</div>
-			<div class="w3-progress-container w3-round-xlarge w3-twothird w3-black" style="max-width: 800px">
-	            <div class="w3-progressbar w3-round-xlarge" style="width:80%"></div>
-	        </div>
-		</div>
-			
-		<div class="w3-row w3-margin">
-			<div class="w3-container w3-third w3-right-align">
-				<span class="w3-tag w3-round w3-blue-grey">Maven, Jenkins</span>
-			</div>
-			<div class="w3-progress-container w3-round-xlarge w3-twothird w3-black" style="max-width: 800px">
-	            <div class="w3-progressbar w3-round-xlarge" style="width:80%"></div>
-	        </div>
-		</div>
+            <div class="w3-row w3-margin">
+                <div class="w3-container w3-third w3-right-align">
+                    <span class="w3-tag w3-round w3-blue-grey">JavaScript, HTML, CSS</span>
+                </div>
+                <div class="w3-progress-container w3-round-xlarge w3-twothird w3-black" style="max-width: 800px">
+                    <div class="w3-progressbar w3-round-xlarge" style="width:80%"></div>
+                </div>
+            </div>
 
-		<div class="w3-row w3-margin">
-			<div class="w3-container w3-third w3-right-align">
-				<span class="w3-tag w3-round w3-blue-grey">SVN, Git</span>
-			</div>
-			<div class="w3-progress-container w3-round-xlarge w3-twothird w3-black" style="max-width: 800px">
-	            <div class="w3-progressbar w3-round-xlarge" style="width:70%"></div>
-	        </div>
-		</div>
+            <div class="w3-row w3-margin">
+                <div class="w3-container w3-third w3-right-align">
+                    <span class="w3-tag w3-round w3-blue-grey">SQL</span>
+                </div>
+                <div class="w3-progress-container w3-round-xlarge w3-twothird w3-black" style="max-width: 800px">
+                    <div class="w3-progressbar w3-round-xlarge" style="width:80%"></div>
+                </div>
+            </div>
 
-		<div class="w3-row w3-margin">
-			<div class="w3-container w3-third w3-right-align">
-				<span class="w3-tag w3-round w3-blue-grey">Jira</span>
-			</div>
-			<div class="w3-progress-container w3-round-xlarge w3-twothird w3-black" style="max-width: 800px">
-	            <div class="w3-progressbar w3-round-xlarge" style="width:60%"></div>
-	        </div>
-		</div>	
+            <div class="w3-row w3-margin">
+                <div class="w3-container w3-third w3-right-align">
+                    <span class="w3-tag w3-round w3-blue-grey">Maven, Jenkins</span>
+                </div>
+                <div class="w3-progress-container w3-round-xlarge w3-twothird w3-black" style="max-width: 800px">
+                    <div class="w3-progressbar w3-round-xlarge" style="width:80%"></div>
+                </div>
+            </div>
 
-		<p>See more on my <a href="https://hu.linkedin.com/in/tamasgorgics" title="linkedIn" target="_blank"><i class="fa fa-linkedin-square"></i></a> profile!</p>
-	</div>
+            <div class="w3-row w3-margin">
+                <div class="w3-container w3-third w3-right-align">
+                    <span class="w3-tag w3-round w3-blue-grey">SVN, Git</span>
+                </div>
+                <div class="w3-progress-container w3-round-xlarge w3-twothird w3-black" style="max-width: 800px">
+                    <div class="w3-progressbar w3-round-xlarge" style="width:70%"></div>
+                </div>
+            </div>
 
-	<!-- Contact section -->
-	<div class="w3-container w3-center w3-padding-32 w3-light-grey" id="contact">
-		<h3 class="w3-wide">CONTACT</h3>
-		<p><i class="fa fa-comments fa-4x"></i></p>
-		<div class="w3-row w3-padding-large">
-			<a href="mailto:gorgics.t@gmail.com" title="e-mail" target="_blank"><i class="fa fa-envelope fa-4x w3-quarter"></i></a>
-			<a href="https://hu.linkedin.com/in/tamasgorgics" title="linkedIn" target="_blank"><i class="fa fa-linkedin-square fa-4x w3-quarter"></i></a>
-			<a href="http://stackoverflow.com/users/3493847/tam%C3%A1s-g?tab=profile" title="StackOverflow" target="_blank"><i class="fa fa-stack-overflow fa-4x w3-quarter"></i></a>
-			<a href="https://github.com/tgorgics" title="github" target="_blank"><i class="fa fa-github fa-4x w3-quarter"></i></a>
-		</div>
-	</div>
+            <div class="w3-row w3-margin">
+                <div class="w3-container w3-third w3-right-align">
+                    <span class="w3-tag w3-round w3-blue-grey">Jira</span>
+                </div>
+                <div class="w3-progress-container w3-round-xlarge w3-twothird w3-black" style="max-width: 800px">
+                    <div class="w3-progressbar w3-round-xlarge" style="width:60%"></div>
+                </div>
+            </div>
 
-	<!-- Google Map -->
-	<div id="googleMap" class="w3-grayscale" style="width:100%;height:450px;"></div>
+            <p>See more on my <a href="https://hu.linkedin.com/in/tamasgorgics" title="linkedIn" target="_blank"><i class="fa fa-linkedin"></i></a> profile page!</p>
+        </div>
 
-	<!-- Footer section -->
-	<div class="w3-container w3-center w3-black">
-		<p class="wide">Tamás Görgics @ 2017</p>
-	</div>
+        <!-- Contact section -->
+        <div class="w3-container w3-center w3-padding-32 w3-light-grey" id="contact">
+            <h3 class="w3-wide">CONTACT</h3>
+            <p><i class="fa fa-comments fa-4x"></i></p>
+            <div class="w3-row w3-padding-large">
+                <a href="mailto:gorgics.t@gmail.com" title="e-mail" target="_blank"><i class="fa fa-envelope fa-4x w3-quarter"></i></a>
+                <a href="https://hu.linkedin.com/in/tamasgorgics" title="linkedIn" target="_blank"><i class="fa fa-linkedin-square fa-4x w3-quarter"></i></a>
+                <a href="http://stackoverflow.com/users/3493847/tam%C3%A1s-g?tab=profile" title="StackOverflow" target="_blank"><i class="fa fa-stack-overflow fa-4x w3-quarter"></i></a>
+                <a href="https://github.com/tgorgics" title="github" target="_blank"><i class="fa fa-github fa-4x w3-quarter"></i></a>
+            </div>
+        </div>
 
-</div>
+        <!-- Google Map -->
+        <div id="googleMap" class="w3-grayscale" style="width:100%;height:450px;"></div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyDqLm6ZK0zjCODOg12oq9emTjsEdcoE08w"></script>
+        <!-- Footer section -->
+        <div class="w3-container w3-center w3-black">
+            <p class="wide">Tamás Görgics @ 2017-2018</p>
+        </div>
 
-<script>
-// Google Map Location
-var myCenter = new google.maps.LatLng(47.497912, 19.040235);
+    </div>
 
-function initialize() {
-	var mapProp = {
-	    center: myCenter,
-	    zoom: 13,
-	    scrollwheel: false,
-	    draggable: false,
-	    mapTypeId: google.maps.MapTypeId.ROADMAP
-	};
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyDqLm6ZK0zjCODOg12oq9emTjsEdcoE08w"></script>
 
-	var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+    <script>
+        // Google Map Location
+        var myCenter = new google.maps.LatLng(47.497912, 19.040235);
 
-	var marker = new google.maps.Marker({
-	    position: myCenter,
-	});
+        function initialize() {
+            var mapProp = {
+                center: myCenter,
+                zoom: 13,
+                scrollwheel: false,
+                draggable: false,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
 
-	marker.setMap(map);
-}
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 
-google.maps.event.addDomListener(window, 'load', initialize);
-google.maps.event.addDomListener(window, 'resize', initialize);
+            var marker = new google.maps.Marker({
+                position: myCenter,
+            });
 
-function moveScreenTo(id) {
-	$('html, body').animate({
-		scrollTop: $(id).offset().top - 20	
-	}, 2000);
-}
+            marker.setMap(map);
+        }
 
-</script>
+        google.maps.event.addDomListener(window, 'load', initialize);
+        google.maps.event.addDomListener(window, 'resize', initialize);
+
+        function moveScreenTo(id) {
+            $('html, body').animate({
+                scrollTop: $(id).offset().top - 20
+            }, 2000);
+        }
+    </script>
 
 </body>
+
 </html>
